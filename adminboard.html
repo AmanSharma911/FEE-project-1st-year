@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <link rel="stylesheet" href="adminboard.css">
+
+  
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <h2>Admin Panel</h2>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#">Users</a></li>
+      <li><a href="#">Orders</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Reports</a></li>
+      <li><a href="#">Settings</a></li>
+    </ul>
+  </div>
+
+ 
+  <div class="main-content">
+   
+    <header>
+      <div class="admin-info">
+        <span>Welcome, AMRIT</span>
+        <button class="logout-btn">Logout</button>
+      </div>
+    </header>
+
+    
+    <section class="stats">
+      <div class="card">
+        <h3>Total Orders</h3>
+        <p>245</p>
+      </div>
+      <div class="card">
+        <h3>Active Users</h3>
+        <p>120</p>
+      </div>
+      <div class="card">
+        <h3>Menu Items</h3>
+        <p>50</p>
+      </div>
+    </section>
+
+   
+    <section class="recent-orders">
+      <h2>Recent Orders</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Order ID</th>
+            <th>Customer</th>
+            <th>Status</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#101</td>
+            <td>J</td>
+            <td>Completed</td>
+            <td>2550</td>
+          </tr>
+          <tr>
+            <td>#102</td>
+            <td>J</td>
+            <td>Pending</td>
+            <td>1400</td>
+          </tr>
+          <tr>
+            <td>#103</td>
+            <td>M</td>
+            <td>Shipped</td>
+            <td>3200</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </div>
+  
+  <script>src="adminboard.js"</script>
+</body>
+</html>

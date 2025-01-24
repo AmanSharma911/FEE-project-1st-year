@@ -1,0 +1,134 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+  }
+  
+  .sidebar-header h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #236efb;
+  }
+  
+  .sidebar-nav {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .sidebar-nav li {
+    margin: 20px 0;
+  }
+  
+  .sidebar-nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar-nav li a:hover {
+    background-color: #444;
+  }
+  
+  .main-content {
+    margin-left: 260px;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  header {
+    background-color: #fff;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .admin-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .admin-info span {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .logout-btn {
+    background-color: #2382f5;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .logout-btn:hover {
+    background-color: #f5a300;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  .card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .recent-orders table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .recent-orders th,
+  .recent-orders td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .recent-orders th {
+    background-color: #0575fe;
+    color: white;
+  }
+  
+  .recent-orders tr:hover {
+    background-color: #f4f4f4;
+  }
+  

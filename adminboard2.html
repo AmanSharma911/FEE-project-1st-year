@@ -1,0 +1,65 @@
+<script>
+    // Function to handle the logout action
+    function logout() {
+      // Show a confirmation alert for logging out
+      const confirmLogout = confirm("Are you sure you want to log out?");
+      if (confirmLogout) {
+        // For now, alert the user and reload the page.
+        alert("You have successfully logged out.");
+        // Clear any session data if required
+        // Example: sessionStorage.clear();
+        // Or you could redirect to the login page:
+        // window.location.href = "login.html"; 
+  
+        // For now, we reload the page to simulate a logout
+        location.reload();
+      }
+    }
+  
+    // Highlight the active menu item in the sidebar
+    document.addEventListener("DOMContentLoaded", function() {
+      const sidebarLinks = document.querySelectorAll(".sidebar-nav li a");
+  
+      sidebarLinks.forEach(link => {
+        link.addEventListener("click", function() {
+          // Remove active class from all links
+          sidebarLinks.forEach(item => item.classList.remove("active"));
+          
+          // Add active class to the clicked link
+          this.classList.add("active");
+        });
+      });
+    });
+  
+    // Optionally, you can simulate fetching data for orders or stats (here's a mockup)
+    // For example, dynamically updating the "Recent Orders" section from a data source:
+  
+    function loadRecentOrders() {
+      const orders = [
+        { id: "#101", customer: "J", status: "Completed", amount: "2550" },
+        { id: "#102", customer: "J", status: "Pending", amount: "1400" },
+        { id: "#103", customer: "M", status: "Shipped", amount: "3200" },
+      ];
+  
+      const tableBody = document.querySelector(".recent-orders tbody");
+      tableBody.innerHTML = ""; // Clear the existing rows
+  
+      orders.forEach(order => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td>${order.id}</td>
+          <td>${order.customer}</td>
+          <td>${order.status}</td>
+          <td>${order.amount}</td>
+        `;
+        tableBody.appendChild(row);
+      });
+    }
+  
+    // Load recent orders when the page is loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      loadRecentOrders();
+    });
+  
+  </script>
+  
